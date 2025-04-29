@@ -114,7 +114,7 @@ export default function Home() {
                   alt="Client" 
                   width={60} 
                   height={60} 
-                  className="rounded-full"
+                  className="rounded-full object-cover w-10 h-10"
                 />
                 <div className="ml-4">
                   <h3 className="font-semibold">Thomas Dubois</h3>
@@ -133,7 +133,7 @@ export default function Home() {
                   alt="Client" 
                   width={60} 
                   height={60} 
-                  className="rounded-full"
+                  className="rounded-full object-cover w-10 h-10"
                 />
                 <div className="ml-4">
                   <h3 className="font-semibold">Lucas Martin</h3>
@@ -152,7 +152,7 @@ export default function Home() {
                   alt="Client" 
                   width={60} 
                   height={60} 
-                  className="rounded-full"
+                  className="rounded-full object-cover w-10 h-10"
                 />
                 <div className="ml-4">
                   <h3 className="font-semibold">Antoine Bernard</h3>
@@ -213,22 +213,22 @@ export default function Home() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {[
-              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
-              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
-              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
-              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
-              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
-              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
-              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
-              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
-
-            ].map((item) => (
-              <div key={item} className="relative aspect-square overflow-hidden rounded-lg group">
+              "/elements/images.jpeg",
+              "/elements/images-2.jpeg",
+              "/elements/images-3.jpeg",
+              "/elements/images-4.png",
+              "/elements/images-5.jpeg",
+              "/elements/images.jpeg",
+              "/elements/images-2.jpeg",
+              "/elements/images-3.jpeg",
+            ].map((item, index) => (
+              <div key={index} className="relative aspect-square overflow-hidden rounded-lg group">
                 <Image 
                   src={item} 
                   alt="Instagram photo" 
-                  fill 
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  width={500} 
+                  height={500}
+                  className="object-cover w-full h-full shadow-lg group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <FaInstagram className="text-white text-3xl" />

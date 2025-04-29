@@ -2,17 +2,24 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["google.com", "www.google.com", "lh3.googleusercontent.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+      {
+        protocol: "https",
+        hostname: "google.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.google.com",
+      },
+    ],
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  reactStrictMode: true,
-  swcMinify: true,
-  output: "standalone",
 };
-
 export default nextConfig;

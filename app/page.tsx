@@ -9,9 +9,10 @@ export default function Home() {
       <section className="relative h-screen">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/hero-barber.jpg" 
+            src="/backgrounds/header.png" 
             alt="Barbier stylé en train de couper les cheveux" 
-            fill 
+            width={1920}
+            height={1080} 
             className="object-cover object-center brightness-50"
             priority
           />
@@ -77,7 +78,7 @@ export default function Home() {
             <div className="lg:w-1/2">
               <div className="relative h-[400px] md:h-[500px] w-full overflow-hidden rounded-lg">
                 <Image 
-                  src="/barber-shop.jpg" 
+                  src="/backgrounds/about.png" 
                   alt="Notre salon de coiffure" 
                   fill 
                   className="object-cover"
@@ -109,7 +110,7 @@ export default function Home() {
             <div className="bg-gray-800 p-8 rounded-lg">
               <div className="flex items-center mb-4">
                 <Image 
-                  src="/avatar-1.jpg" 
+                  src="/backgrounds/h1.png" 
                   alt="Client" 
                   width={60} 
                   height={60} 
@@ -128,7 +129,7 @@ export default function Home() {
             <div className="bg-gray-800 p-8 rounded-lg">
               <div className="flex items-center mb-4">
                 <Image 
-                  src="/avatar-2.jpg" 
+                  src="/backgrounds/h1.png" 
                   alt="Client" 
                   width={60} 
                   height={60} 
@@ -147,7 +148,7 @@ export default function Home() {
             <div className="bg-gray-800 p-8 rounded-lg">
               <div className="flex items-center mb-4">
                 <Image 
-                  src="/avatar-3.jpg" 
+                  src="/backgrounds/h1.png" 
                   alt="Client" 
                   width={60} 
                   height={60} 
@@ -211,10 +212,20 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+            {[
+              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
+              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
+              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
+              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
+              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
+              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
+              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
+              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.instagram.com%2Fcoupedecheveuxhomme%2F&psig=AOvVaw2CIjqqR45esPg_gvbO7_xD&ust=1746021643029000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNivk9Cz_YwDFQAAAAAdAAAAABAE",
+
+            ].map((item) => (
               <div key={item} className="relative aspect-square overflow-hidden rounded-lg group">
                 <Image 
-                  src={`/insta-${item}.jpg`} 
+                  src={item} 
                   alt="Instagram photo" 
                   fill 
                   className="object-cover group-hover:scale-110 transition-transform duration-300"

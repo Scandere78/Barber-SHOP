@@ -1,0 +1,103 @@
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOutUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.popupEnter {
+    animation: slideInUp 0.5s forwards;
+}
+
+.popupExit {
+    animation: slideOutUp 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes idleAnimation1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px) translateX(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes idleAnimation2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px) translateX(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes idleAnimation3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px) translateX(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Tomate 1 */
+.animatedTomate1 {
+    animation: fadeIn 1s ease-out forwards, idleAnimation1 8s ease-in-out 1s infinite;
+    opacity: 1;
+}
+
+/* Tomate 2 */
+.animatedTomate2 {
+    animation: fadeIn 1s ease-out forwards, idleAnimation2 8s ease-in-out 1s infinite;
+    opacity: 1;
+}
+
+/* Tomate 3 */
+.animatedTomate3 {
+    animation: fadeIn 1s ease-out forwards, idleAnimation3 8s ease-in-out 1s infinite;
+    opacity: 1;
+}
